@@ -1,0 +1,5 @@
+<div>
+    <% @school_classes.each do |sc| %>
+        <h3>Room: <%= sc.room_number %> &nbsp; | &nbsp; <%= link_to sc.title, school_class_path(sc) %></h3>
+    <% end %>
+</div>
